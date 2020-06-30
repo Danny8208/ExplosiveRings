@@ -1,0 +1,7 @@
+{
+  "itemGroup.explosiverings": "ExplosiveRings",
+  "item.explosiverings.explosive_ring": "Explosive Ring",
+  "item.explosiverings.active_state": "Currently Active?: %s",
+  "item.explosiverings.stored_explosives": "Stored Explosives %s",
+  "item.explosiverings.directions": "Shift R-Takes TNT(5 explosives) or gunpowder(1 explosives) from the first slot of the player inventory, R-click to activate"
+}

@@ -23,5 +23,6 @@ public class ExplosiveRings {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
+        ModKeybinding.init();
     }
 }
