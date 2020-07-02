@@ -1,5 +1,7 @@
 package danny8208.explosiverings.items;
 
+import danny8208.explosiverings.ModKeybinding;
+import danny8208.explosiverings.entity.ExplosiveProjectile;
 import danny8208.explosiverings.util.EnabledUtil;
 import danny8208.explosiverings.util.ExplosiveNBT;
 import net.minecraft.client.util.ITooltipFlag;
@@ -12,6 +14,7 @@ import net.minecraft.item.Items;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 
@@ -40,7 +43,10 @@ public class RingExplosive extends Item {
         super.inventoryTick(stack, worldIn, entityIn, itemSlot, isSelected);
         if (!worldIn.isRemote && entityIn instanceof PlayerEntity) {
             PlayerEntity player = (PlayerEntity) entityIn;
-
+            if (ModKeybinding.EJECT_BALL.isPressed()) {
+                worldIn.addEntity(new ExplosiveProjectile(player));
+                player.sendStatusMessage(new StringTextComponent("shots fired"), false);
+            }
         }
     }
 
