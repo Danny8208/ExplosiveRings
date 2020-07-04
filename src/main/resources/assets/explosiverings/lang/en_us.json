@@ -1,7 +1,9 @@
 {
   "itemGroup.explosiverings": "ExplosiveRings",
   "item.explosiverings.explosive_ring": "Explosive Ring",
+  "item.explosiverings.shift_message": "Hold Shift",
   "item.explosiverings.active_state": "Currently Active?: %s",
-  "item.explosiverings.stored_explosives": "Stored Explosives %s",
-  "item.explosiverings.directions": "Shift R-Takes TNT(5 explosives) or gunpowder(1 explosives) from the first slot of the player inventory, R-click to activate"
+  "item.explosiverings.stored_explosives": "Stored Explosives: %s",
+  "item.explosiverings.explosion_radius": "Current Explosion Radius: %s",
+  "item.explosiverings.directions": "Shift R-Takes TNT(10 explosives) or gunpowder(2 explosives) from the first slot of the player inventory, R-click to activate"
 }
